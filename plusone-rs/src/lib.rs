@@ -5,7 +5,7 @@ pub fn increment_string<'a, T: AsRef<str> + 'a>(input: T) -> Result<isize, Parse
 }
 
 #[test]
-fn test_name() {
+fn test_increment_string() {
     assert_eq!(increment_string("5"), Ok(6));
     assert_eq!(increment_string("-1"), Ok(0));
     assert!(increment_string("bar").is_err());
