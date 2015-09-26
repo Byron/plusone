@@ -1,8 +1,7 @@
 use std::num::ParseIntError;
 
 pub fn increment_string<'a, T: AsRef<str> + 'a>(input: T) -> Result<isize, ParseIntError> {
-    input.as_ref().parse::<isize>()
-        .map(|v| v+1)
+    input.as_ref().parse::<isize>().map(|v| v+1)
 }
 
 #[test]
