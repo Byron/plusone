@@ -1,0 +1,4 @@
+[package]
+name = "plusone-rs"
+version = "0.1.0"
+authors = ["Sebastian Thiel <sthiel@thoughtworks.com>"]
